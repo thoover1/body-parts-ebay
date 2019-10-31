@@ -87,3 +87,16 @@ CREATE TABLE purchase_history (
     part_id INTEGER REFERENCES inventory(part_id)
 )
 ```
+
+- user purchase history on one table
+
+```SQL
+-- SELECT * FROM users;
+-- SELECT * FROM inventory;
+SELECT users.user_id, username, password, purchase_date, part_name, inventory.part_id, price, quality, image
+FROM users
+    JOIN purchase_history
+    ON (users.user_id = purchase_history.user_id)
+    JOIN inventory
+    ON (purchase_history.part_id = inventory.part_id);
+```
