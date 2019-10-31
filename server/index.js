@@ -2,6 +2,10 @@ require("dotenv").config();
 const express = require("express");
 const session = require("express-session");
 const massive = require("massive");
+
+// for static server - doesn't work yet
+// app.use(express.static(__dirname + "/../build"));
+
 const {
   register,
   login,

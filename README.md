@@ -2,6 +2,37 @@
 
 ## frontend (REACT)
 
+### dependencies
+
+- axios
+- redux
+- react-redux
+- react-router-dom
+- http-proxy-middleware
+- redux-promise-middleware
+- node-sass
+
+### routes
+
+- login/register => '/' => AuthComponent.js
+- Store => '/body_parts' => AvailableBodyParts.js
+- Profile => '/profile' => Profile.js
+
+### file-structure
+
+- src/
+  - Components/
+    - AuthComponent.js
+    - AvailableBodyParts.js
+    - Profile.js
+  - App.js
+  - Index.js
+  - Index.css => reset.css
+  - setupProxy.js
+  - ducks/
+    - store.js
+    - reducer.js
+
 ## backend (EXPRESS)
 
 ### dependencies
